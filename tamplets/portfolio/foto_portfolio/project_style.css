@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 4922px;
+    background-color: black;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin: 40px 20px;
+    padding-bottom: 70px;
+}
+
+header a{
+    text-decoration-line: none;
+    color: white;
+    width: 74px;
+    height: 38px;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 38px;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.first_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 102px;
+}
+
+.title{
+    width: 70%;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.img img{
+    width: 1336px;
+    height: 752px;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.first_text{
+    width: 75%;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+.second_section{
+    width: 80%;
+    height: 40%;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: repeat(1fr 1fr);
+    justify-items: center;
+}
+
+.second_img img, .first_img img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first_img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+}
+
+.first_img_text{
+    padding-bottom: 12em;
+    font-weight: 300;
+    font-size: 30px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    text-align: start;
+}
+
+.second_img{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: span 4;
+}
+
+.second_img_text{
+    padding-top: 12em;
+    font-weight: 300;
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    text-align: end;
+}
+
+.profile_img img{
+    width: 323px;
+    height: 410px;
+}
+
+.review_title{
+    padding-bottom: 60px;
+    font-weight: 400;
+    font-size: 74px;
+}
+
+.reviews{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15em; 
+}
+
+.review{
+    display: flex;
+}
+
+.user_info{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.text_title{
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 58px;
+}
+
+.review_text{
+    padding-left: 40px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.name{
+    padding-left: 40px;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+footer{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white ;
+}
+
+.year{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.terms, .privacy{
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.terms_priv{
+    display: flex;
+    gap: 99px;
+}
+

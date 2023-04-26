@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cosmic_style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#">Cosmic</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Discover the Cosmos</h1>
+        <p>Explore the mysteries of the universe with Cosmic, the ultimate space-themed website template.</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <img src="cosmic_img/saturn.png"/>
+            <h2>Discover New Worlds</h2>
+            <p>Explore the countless planets, moons, and asteroids in our solar system and beyond.</p>
+        </div>
+        <div class="feature">
+            <img src="cosmic_img/satelite.png"/>
+            <h2>Track Satellites</h2>
+            <p>Find out where your favorite satellites are located and track their orbits in real-time.</p>
+        </div>
+        <div class="feature">
+            <img src="cosmic_img/meteorite.png"/>
+            <h2>Watch Meteor Showers</h2>
+            <p>Get alerts for upcoming meteor showers and find the best places to view them from.</p>
+        </div>
+    </section>
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>Join the Space Community</h2>
+        <p>Sign up for our newsletter to receive the latest updates on space exploration and technology.</p>
+        <button>Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Cosmic. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+            
+            burger.addEventListener('click', () => {
+                // Toggle Nav
+                nav.classList.toggle('nav-active');
+                
+                // Animate Links
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                    }
+                });
+                
+                // Burger Animation
+                burger.classList.toggle('toggle');
+            });
+        };
+        
+        navSlide();
+    </script>
+</body>
+</html>

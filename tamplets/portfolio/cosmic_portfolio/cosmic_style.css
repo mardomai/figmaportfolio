@@ -1,0 +1,189 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Banner Styles */
+.banner {
+    background-image:url(cosmic_img/comsic_one.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.banner h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+.banner p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    max-width: 600px;
+    text-shadow: 2px 2px #000;
+}
+
+.banner button {
+    display: inline-block;
+    background-color: #fff;
+    color: #111;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    text-shadow: none;
+}
+
+.banner button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Features Section Styles */
+section.features {
+    background-color: #222;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.feature p {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 400px;
+}
+
+/* Call to Action Styles */
+.cta {
+    background-image:url(cosmic_img/comsic_two.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.cta h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+.cta p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    max-width: 600px;
+    text-shadow: 2px 2px #000;
+}
+
+.cta button {
+    display: inline-block;
+    background-color: #fff;
+    color: #111;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    text-shadow: none;
+}
+
+.cta button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}

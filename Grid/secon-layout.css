@@ -1,0 +1,32 @@
+.second-layout> * {
+    border: 1px solid black;
+    background-color: red;
+}
+header, footer{
+    grid-column: 1/ 4;
+}
+header, main, footer, aside, nav{
+    padding:1rem;
+    border: 1px solid pink;
+}
+aside{
+    grid-row: 2 / 4;
+}
+main , nav{
+    grid-column: 2 / 3;
+}
+.right{
+    grid-column: 3 / 4;
+}
+.left{
+    grid-column: 1 / 2;
+}
+.second-layout{
+    display:grid;
+    grid-template-columns: minmax(100px 300px) 1fr minmax(100px 300px);
+    grid-template-rows: auto auto 1fr auto;
+    background-color: blueviolet;
+    padding:1rem;
+    min-height: 100vh;
+    gap:10px;
+}
